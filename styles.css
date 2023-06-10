@@ -34,7 +34,7 @@ body {
   
   .logo {
     max-width: 200px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
     animation: heartbeat 2.5s infinite;
     transform-origin: center;
   }
@@ -79,6 +79,6 @@ body {
   
   .description {
     font-size: 16px;
-    margin-top: 50px;
+    margin-top: 0px;
   }
   
