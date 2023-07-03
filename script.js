@@ -116,3 +116,64 @@ animateServiceItems(); // Initial animation on page load
 ScrollTrigger.addEventListener('refresh', animateServiceItems); // Re-apply animations on scroll refresh
 
 
+
+
+
+
+
+
+// Animation for services image
+gsap.registerPlugin(ScrollTrigger);
+
+function animatefeatures() {
+  // Select all service items
+  const features = document.querySelectorAll('.feature');
+
+  // Loop through each service item and apply the slide-in animation
+  features.forEach((item, index) => {
+    gsap.fromTo(
+      item,
+      { x: 100, opacity: 0 }, // Initial state
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        delay: index * 0.2,
+        scrollTrigger: {
+          trigger: item,
+          start: 'top 80%',
+        },
+      }
+    );
+  });
+}
+
+animatefeatures(); // Initial animation on page load
+
+ScrollTrigger.addEventListener('refresh', animatefeatures); // Re-apply animations on scroll refresh
+
+
+
+
+
+
+// Studio section scroll code
+
+$(document).ready(function() {
+  $('#gallery1').on('mousedown', function(e) {
+    $(this).addClass('dragging');
+    $(this).data('startX', e.pageX - $(this).offset().left);
+    $(this).data('scrollLeft', $(this).scrollLeft());
+  }).on('mouseup', function() {
+    $(this).removeClass('dragging');
+  }).on('mousemove', function(e) {
+    if ($(this).hasClass('dragging')) {
+      var scrollLeft = $(this).data('scrollLeft');
+      $(this).scrollLeft(scrollLeft - (e.pageX - $(this).offset().left - $(this).data('startX')));
+    }
+  });
+});
+
+
+
+
