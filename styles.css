@@ -736,7 +736,7 @@ background-color: #ffffff; /* Color of the toggle button icon */
     .feature-section {
       display: flex;
       flex-direction: column;
-      padding: 20px 20px;
+      padding: 20px 10px;
     }
 
     .feature-first {
