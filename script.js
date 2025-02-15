@@ -1,3 +1,21 @@
+
+
+
+
+
+
+//video autoplay code
+document.addEventListener("DOMContentLoaded", function () {
+  let video = document.querySelector(".bg-video");
+  video.play().catch(error => console.log("Autoplay blocked:", error));
+});
+
+
+
+
+
+
+
 // JavaScript code for the text slider
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
