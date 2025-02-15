@@ -195,6 +195,7 @@ background-color: #ffffff; /* Color of the toggle button icon */
 @media (max-width: 768px) {
   .hero {
     height: 300px; /* Adjust the height as needed */
+    padding: 0 20px; /* Add padding for better readability on mobile */
   }
   
   .hero-content {
@@ -203,10 +204,11 @@ background-color: #ffffff; /* Color of the toggle button icon */
   
   .slide h1 {
     font-size: 24px; /* Adjust the font size as needed for mobile */
+    margin-bottom: 20px;
   }
   
   .cta-wrapper {
-    margin-top: 70px; /* Adjust the margin as desired for mobile */
+    margin-top: 100px; /* Adjust the margin as desired for mobile */
   }
 
  
@@ -237,7 +239,7 @@ background-color: #ffffff; /* Color of the toggle button icon */
   align-items: center;
   justify-content: center;
   background-color: #c07109;
-  border-radius: 50px;
+  border-radius: 20px;
   margin-right: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.445)
 }
@@ -312,6 +314,29 @@ background-color: #ffffff; /* Color of the toggle button icon */
 
 
 
+
+
+.disc {
+  width: 400px;
+  height: 400px;
+  background: url('images/frame.png') no-repeat center center;
+  background-size: cover;
+  border-radius: 50%;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+
+
+
 @media (max-width: 767px) {
   .about-us {
     flex-direction: column;
@@ -367,6 +392,13 @@ background-color: #ffffff; /* Color of the toggle button icon */
   .about-us .content-container h1 i.fa-microphone {
     color: #a72d2d; /* Red color */
     font-size: 30px;
+  }
+
+  .disc {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
 }
