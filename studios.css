@@ -1,0 +1,766 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
+    
+  }
+  
+  
+  
+  
+  /* Reset some default styles for the header */
+  
+  
+  /* Background color for the header */
+  
+  header {
+    background: linear-gradient(to right, #0c0000, #30013f); /* Replace #FF0000 and #00FF00 with your desired colors */
+  }
+  
+  
+  
+  
+  /* Adjust the logo's size and spacing */
+  .navbar-brand img {
+  width: 50px; /* Adjust the width as needed */
+  height: 50px;
+  margin-right: 10px; /* Add margin to separate the logo from the navigation links */
+  }
+  
+  /* Style the navigation links */
+  .navbar-nav .nav-link {
+    color: #ffffff !important; /* Replace #FF0000 with your desired color */
+  }
+  
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus {
+  color: #d3d2d2; /* Link color on hover or focus */
+  }
+  
+  
+  .navbar-collapse .btn{
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 5px 10px;
+  border: 1px solid black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  }
+  
+  .navbar-collapse .btn:hover{
+  background-color: #C0D0B4;
+  color: #000000;
+  
+  }
+  
+  
+  /* Style the navigation toggle button */
+  .navbar-toggler {
+  border: none; /* Remove the default button border */
+  }
+  
+  .navbar-toggler-icon {
+  background-color: #ffffff; /* Color of the toggle button icon */
+  }
+  
+  /* Align the navigation links to the right on larger screens */
+  @media (min-width: 768px) {
+  .navbar-nav {
+    margin-left: auto;
+    
+  }
+  
+  .navbar-collapse .btn{
+    margin-left: 20px;
+  }
+  
+  }
+  
+  @media (max-width: 768px) {
+  .navbar-collapse .btn {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Hero Section Styles */
+  .hero {
+    position: relative;
+    height: 500px; /* Adjust the height as needed */
+    overflow: hidden;
+    background-image: url("images/hero\ img.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.445);
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: #fff;
+    
+  }
+  
+  .text-slider {
+    margin-bottom: 20px;
+    
+  }
+  
+  .slide {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Font Import */
+  @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+  
+  
+  .slide h1 {
+    font-family: 'krona one', serif;
+    font-size: 40px; /* Adjust the font size as needed */
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+   
+    letter-spacing: 2px
+    /* Additional styling properties can be added as desired */
+  }
+  
+  
+  
+  .slide.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  .cta-wrapper {
+    margin-top: 70px;
+    
+  }
+  
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #22c7bf; /* Initial background color */
+  }
+  
+  
+  .cta-button:hover{
+    text-decoration: none;
+    background-color: #18cac1;
+    padding: 10px 20px;
+    color: #ffffff;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .hero {
+      height: 300px; /* Adjust the height as needed */
+    }
+    
+    .hero-content {
+      padding: 0 50px; /* Add padding for better readability on mobile */
+    }
+    
+    .slide h1 {
+      font-size: 24px; /* Adjust the font size as needed for mobile */
+    }
+    
+    .cta-wrapper {
+      margin-top: 70px; /* Adjust the margin as desired for mobile */
+    }
+  
+   
+  
+  }
+  
+  
+  
+  
+
+
+  
+  
+  .studio-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 150px;
+    background-color: #ffffff;
+    color: rgb(24, 23, 23);
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+.page-content h1 {
+    font-size: 50px;
+  font-weight: bold;
+  color: #383838;
+  margin: 0;
+  font-family: 'baloo 2', cursive;
+  font-weight: 500;
+}
+
+.page-content p {
+    font-size: 20px;
+    font-family: 'baloo 2', cursive;
+    color: #383838;
+
+    
+}
+
+.section-btn {
+    margin-left: 20px;
+}
+
+.btn-primary {
+    display: inline-block;
+  padding: 10px 50px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: #22c7bf; /* Initial background color */
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    text-decoration: none;
+    background-color: #18cac1;
+    padding: 10px 50px;
+    color: #ffffff;
+}
+
+
+.section-btn .btn-primary i {
+    margin-left: 8px; /* Space between text and icon */
+    font-size: 18px; /* Increase icon size */
+    color: white !important; /* Ensure visibility */
+    display: inline-block; /* Prevents collapse */
+    vertical-align: middle; /* Aligns with text */
+}
+
+
+
+.section-btn .btn-primary:hover i {
+    transform: translate(3px, -3px); /* Moves icon slightly up-right on hover */
+}
+
+
+
+
+
+
+
+.disc {
+    width: 400px;
+    height: 400px;
+    background: url('images/frame.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+/* Mobile & Tablet Responsive Styles */
+@media (max-width: 1024px) {
+    .studio-page {
+        flex-direction: column; /* Stack content vertically */
+        padding: 40px 50px;
+        text-align: center;
+    }
+
+    .page-content {
+        max-width: 100%;
+    }
+
+    .page-content h1 {
+        font-size: 36px; /* Reduce font size for readability */
+    }
+
+    .page-content p {
+        font-size: 18px;
+    }
+
+    .section-btn {
+        display: none; /* Hide the CTA button on mobile */
+    }
+    .disc {
+        width: 300px; /* Reduce disc size for tablets */
+        height: 300px;
+    }
+}
+
+/* Mobile Specific Adjustments (Phones) */
+@media (max-width: 768px) {
+    .studio-page {
+        padding: 30px 20px;
+    }
+
+    .page-content h1 {
+        font-size: 28px; /* Smaller heading */
+    }
+
+    .page-content p {
+        font-size: 16px;
+    }
+
+    .section-btn {
+        display: none; /* Hide the CTA button on mobile */
+    }
+
+    .btn-primary {
+        padding: 10px 30px; /* Adjust button padding */
+        font-size: 14px;
+    }
+
+    .disc {
+        width: 200px; /* Reduce disc size further */
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:  20px;
+    padding: 40px 150px;
+}
+
+.info-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Background Overlay */
+.info-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.74); /* Dark transparent overlay */
+    border-radius: 15px;
+}
+
+.info-card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.info-card h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+
+/* Background Images */
+.production {
+    background-image: url('images/beat\ production.jpg');
+}
+
+.recording {
+    background-image: url('images/vocal\ recording.jpg');
+}
+
+.mixing {
+    background-image: url('images/artist\ 4.jpg');
+}
+
+.mastering {
+    background-image: url('images/artist\ 5.jpg');
+}
+
+
+
+
+/* Tablet (Max 1024px) Adjustments */
+@media (max-width: 1024px) {
+    .info {
+        grid-template-columns: 1fr; /* Switch to single column */
+        padding: 40px 50px; /* Reduce padding */
+        gap: 15px; /* Reduce gap */
+    }
+
+    .info-card {
+        height: 250px; /* Reduce card height */
+    }
+
+    .info-card h2 {
+        font-size: 20px; /* Slightly reduce text size */
+    }
+
+    .info-card i {
+        font-size: 35px; /* Adjust icon size */
+    }
+}
+
+/* Mobile (Max 768px) - Full-width Layout */
+@media (max-width: 768px) {
+    .info {
+        grid-template-columns: 1fr; /* Stack divs vertically */
+        padding: 30px 20px; /* Smaller padding */
+        gap: 10px;
+    }
+
+    .info-card {
+        height: 200px; /* Reduce height for mobile */
+        border-radius: 10px; /* Slightly smaller rounded corners */
+    }
+
+    .info-card h2 {
+        font-size: 18px;
+    }
+
+    .info-card i {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    background-color: #0f0f0f;
+    
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-heading {
+    margin-bottom: 100px;
+  }
+  
+  .footer-nav{
+  margin-bottom: 20px;
+  }
+  
+  .footer-heading h1 {
+    font-size: 50px;
+    color: white;
+    font-family: 'Baloo 2', cursive;
+  }
+  
+  .footer-heading i {
+    margin-right: 5px; /* Adjust the margin as needed */
+    color: #23cfc1; /* Set the desired color for the icon */
+    font-size: 50px; /* Set the desired font size for the icon */
+  }
+  
+  .footer-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-nav ul li {
+    margin-right: 10px;
+  }
+  
+  .footer-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Baloo 2', cursive;
+  }
+  
+  .footer-address p {
+    font-size: 18px;
+    font-family: 'Baloo 2', cursive;
+    color: white;
+  }
+  
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+  }
+  
+  .footer-right .logo{
+    margin-bottom: 30px;
+  }
+  
+  .footer-right .cta{
+    margin-bottom: 30px;
+    margin-right: 40px;
+  }
+  
+  .footer-right .socials{
+    margin-bottom: 10px;
+    margin-right: 50px;
+  }
+  
+  .footer-right .logo img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .footer-right .cta-button {
+    padding: 10px 20px;
+    background-color: #36afa9;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+  }
+  
+  .footer-right .socials a {
+    margin-right: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+  }
+  
+  .footer-info p {
+    font-size: 16px;
+    font-family: 'Baloo 2', cursive;
+    color: white;
+  }
+  
+  @media (max-width: 767px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 50px 20px;
+    }
+  
+    .footer-heading {
+      margin-bottom: 10px;
+    }
+  
+    .footer-heading h1 {
+      font-size: 30px;
+      color: white;
+    }
+  
+    .footer-heading h1 i {
+      font-size: 30px;
+      
+    }
+  
+    .footer-nav {
+      display: none;
+    }
+  
+    .footer-address p {
+      font-size: 20px;
+      
+      
+    }
+  
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+  
+    .footer-right .logo{
+      display: none;
+    }
+  
+    .footer-right .cta {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  
+    .footer-right .socials {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  
+    .footer-text {
+      margin-bottom: 10px;
+    }
+  
+    .footer-info p {
+      font-size: 18px;
+      
+    }
+  
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Adjustments for tablets (e.g., iPad Air, iPad Mini) */
+  
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 50px;
+      
+      
+    }
+  
+    .footer-heading {
+      margin-top: 20px;
+      margin-bottom: 150px;
+    }
+    
+    .footer-nav{
+    margin-bottom: 20px;
+    }
+    
+    .footer-heading h1 {
+      font-size: 40px;
+     
+    }
+  
+  
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      
+    }
+    
+    .footer-info p {
+      font-size: 20px;
+      width: 300px;
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
