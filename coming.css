@@ -68,7 +68,7 @@
 /* CTA Button */
 .cta {
     position: absolute;
-    bottom: 50px; /* Positioned lower */
+    bottom: 200px; /* Positioned lower */
     z-index: 2;
 }
 
