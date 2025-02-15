@@ -1,0 +1,108 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+ /* Font Import */
+ @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+  
+
+/* Full-Screen Container */
+.coming-soon {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Full-Screen Video Background */
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures full coverage */
+    z-index: -1;
+}
+
+/* Overlay for Better Readability */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.404); /* Darkens background */
+    z-index: 1;
+}
+
+/* Content Styling */
+.content {
+    position: absolute;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+.content p {
+    font-size: 20px;
+}
+
+/* CTA Button */
+.cta {
+    position: absolute;
+    bottom: 50px; /* Positioned lower */
+    z-index: 2;
+}
+
+.btn {
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background-color:  #0b7c73; /* Vibrant orange */
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4a065f;
+    color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 32px;
+        font-family: 'krona one', serif;
+        font-size: 40px; /* Adjust the font size as needed */
+        font-weight: 400;
+    }
+    
+    .content p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+}

@@ -326,6 +326,13 @@
         text-align: center;
     }
 
+    .image-container {
+        order: 2;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
     .page-content {
         max-width: 100%;
     }
