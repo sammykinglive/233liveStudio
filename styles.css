@@ -345,7 +345,7 @@ background-color: #ffffff; /* Color of the toggle button icon */
   }
   
   .image-container {
-    order: 2;
+    
     width: 100%;
     height: auto;
     margin-bottom: 20px;
@@ -357,7 +357,7 @@ background-color: #ffffff; /* Color of the toggle button icon */
   }
   
   .content-container {
-    order: 1;
+    
     padding: 10px;
   }
 
